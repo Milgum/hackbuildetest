@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="CSS/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="CSS/font-awesome-4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="CSS/nav.css">
+      <link rel="stylesheet" href="CSS/style.css">
+      <link rel="stylesheet" href="CSS/style-switcher.css">
+    
+      <script src="JS/main.js" defer></script>
+      <link rel="stylesheet" href="CSS/cause.css">
+      <!--CSS style switcher-->
+      <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1"
+      disabled> 
+      <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2"
+      disabled> 
+      <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3"
+      enable> 
+      <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4"
+      disabled> 
+      <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5"
+      disabled> 
+      <link rel="stylesheet" href="css/style-switcher.css">
+      <script src="JS/scriptswitcher.js"defer></script>
+
+    <title>hackbuilder</title>
+</head>
+<body>
+
+   <nav>
+        <img src="" alt="">
+        <div class="searchinput">
+            <input type="search">
+            <i class="fa fa-search"></i>
+        </div> 
+        <div class="notif">
+            <i class="fa fa-bell"></i>
+            <span>1</span>
+        </div>    
+   </nav>
+
+   <div class="text-center mt-1 burgermenuphone" id="clickburgerphone">
+        <span class="Spanburgerphone1"></span>
+        <span class="Spanburgerphone2"></span>
+        <span class="Spanburgerphone3"></span>
+    </div>
+
+   <div class="menu_vertical  " id="menuvertical">
+        <ul>
+            <div class="text-center mt-1 burgermenu" id="clickburger">
+                <span class="Spanburger1"></span>
+                <span class="Spanburger2"></span>
+                <span class="Spanburger3"></span>
+            </div>
+            <div class="text-center userprofil">
+                <img src="picture/profil.jpg" alt="">
+                <a href="#username">Blitatous</a>
+            </div>
+
+            <hr>
+            <li class="menu_list active" id="menu1">
+                <a href="###" class="itemlist"> <i class="fa fa-home">                   
+                </i>
+                <span>Acceuil</span> </a>
+            </li>
+            <li class="menu_list" id="menu2">
+                <a href="###" class="itemlist">  <i class="fa fa-object-group">     
+                </i> 
+                  <span>Project</span>  </a>
+            </li>
+            <li class="menu_list" id="menu3">
+                <a href="###" class="itemlist">  <i class="fa fa-dashboard">
+                </i> 
+                    <span>Dashboard</span> </a>
+            </li>
+            <li class="menu_list logout" id="menulast">
+                <a href="###" class="itemlist">  <i class="fa fa-sign-out">  
+                </i> 
+                <span>Déconnecter</span> </s>
+            </li>
+        </ul>
+
+        <script>
+            const menulist=document.querySelector('.menu_list')
+            var menu1=document.getElementById('menu1');
+            var menu2=document.getElementById('menu2');
+            var menu3=document.getElementById('menu3');
+
+            menu1.onclick=function(){
+                menu1.classList.add('active');
+                menu2.classList.remove('active');
+                menu3.classList.remove('active');
+            };
+            menu2.onclick=function(){
+                menu1.classList.remove('active');
+                menu2.classList.add('active');
+                menu3.classList.remove('active');
+            };
+            menu3.onclick=function(){
+                menu1.classList.remove('active');
+                menu2.classList.remove('active');
+                menu3.classList.add('active');
+            };
+      
+        </script>
+     
+   </div>
+
+
+
+
+<!-- header end -->
+
+<section class="container weekeventcontainer">
+    
+    <div class=" row container mt-2">
+       
+        <div class=" col-12 container weekevent">
+            <div>
+                <h3>Voici Le sprint de ce week end</h3>
+                <p >un petit concour qui à pour theme :<span class="text-uppercase"> xtheme</span>
+                    si vous voulez y participer ,vous savez ce qu'il faut faire</p>
+            </div>
+       
+            <div class="btnweek">
+                <button>
+                    <i class="fa fa-plus"></i>
+                </button>
+                <a href="###">
+                    <button>
+                        <i class="fa fa-eye"> </i>
+                    </button>
+                </a> 
+            </div>
+        </div>
+    
+       
+        <div class="  col-md-6 otherevent">
+            <i class="fa fa-random"></i>
+            <span> ici vous participer a une competition de type public</span>
+            <button>
+                Participer
+            </button>
+        </div>
+        
+        <div class="col-md-6 otherevent">
+            <i class="fa fa-user-secret"></i>
+            <span> Vous pouvez créer votre propre competition priver</span>
+            <button>
+                <i class="fa fa-plus"></i>
+            </button>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row ">      
+            <div class="col-sm-12 col-md-6 text-center">
+                <div class="contact_nous">
+                    <h4>Suivez-nous</h4>
+                    <div class="list_social_media1 ">
+                        <div class="row social_media">
+                            <div class="col-sm-12 col-md-4 ">
+                                <li><a href="#a"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <li><a href="#b"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <li><a href="#c"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <li><a href="#d"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <li><a href="#eg"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_social_media2 text-center container">
+                        <div class="footer-social-link text-center">
+                            <ul>
+                                <li>
+                                    <a href="#a">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#a">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#a">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#a">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#a">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 container">
+                <div class="contact_nous ">
+                    <div class="container">
+                        <h3 > <i class="fa fa-map-o" aria-hidden="true"></i> Fianarantsoa</h3>
+                        <p>Andrainjato</p>
+                    </div>
+                    <div>
+                        <div class="footer-widget">
+                            <p class="container">
+                           Vous pouvez nous envoyer un mail</p>
+                            <form action="#">
+                                <div class="form-row container">
+                                    <div class="col email-footer-form">
+                                        <input type="email" class="form-control" placeholder="Email Address">
+                                        <button type="submit">
+                                            <i class="fa fa-send"></i>
+                                        </button>
+                                        <div class="footer_pays">
+                                            <p>Madagascar</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>                   
+                        </div>                
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span>Copyright © 2022</span>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+    <div id="back-to-top" class="back-to-top">
+        <button class="btn btn-dark" title="Back to Top" style="display: block;">
+           <a href="#"> <i class="fa fa-angle-up"></i></a>
+        </button>
+    </div>
+</footer>
+
+
+    
+          <!--style switch start-->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fa fa-cog fa-spin" ></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fa fa-moon-o "></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            
+        </div>
+    </div>
+
+    <!--style switch start-->
+</body>
+</html>
